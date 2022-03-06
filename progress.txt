@@ -3,5 +3,6 @@
 https://eloquentjavascript.net/code/#1
 Data de inicio:  05/03/2022  
 Data de conclusão: 
-Página : 10 - 06-03-2022
+Página : 25 - 06-03-2022
+Program Exercises 
 ------------------------------------------

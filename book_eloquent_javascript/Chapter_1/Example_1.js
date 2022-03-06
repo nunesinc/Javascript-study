@@ -38,17 +38,6 @@ console.log(null == 0);
 // → false
 
 
-That behavior is often useful. When you want to test whether a value has a
-real value instead of null or undefined, you can compare it to null with the
-== (or !=) operator.
-But what if you want to test whether something refers to the precise value
-false? Expressions like 0 == false and "" == false are also true because
-of automatic type conversion. When you do not want any type conversions
-to happen, there are two additional operators: === and !==. The first tests
-whether a value is precisely equal to the other, and the second tests whether it
-is not precisely equal. So "" === false is false as expected.
-
-
 //We saw binary operators for arithmetic (+, -, *, /, and %),
 //string concatenation (+),
 //comparison (==, !=, ===, !==, <, >, <=, >=), 
