@@ -102,3 +102,33 @@ squirrel: true},
 /* and so on... */
 ];
 //console.log(journal);
+
+/*
+    With objects, there is a difference between having two references to the same object
+    and having two different objects that contain the same properties. 
+
+    The object1 and object2 bindings grasp the same object, which is why changing object1 also changes the value of object2.
+     They are said to have the same identity. 
+     The binding object3 points to a different object, which initially contains the same properties as object1 but lives a separate life
+*/
+console.log(" --- Multability  : ---");
+let object1 = {value: 10};
+let object2 = object1;
+let object3 = {value: 10};
+console.log(object1 == object2);
+// → true
+console.log(object1 == object3);
+// → false
+object1.value = 15;
+console.log(object2.value);
+// → 15
+console.log(object3.value);
+// → 10
+
+
+console.log(" --- Multability - bindings : ---");
+const score = {visitors: 0, home: 0};
+// This is okay
+console.log(score.visitors = 1);
+// This isn't allowed
+///score = {visitors: 1, home: 1};
